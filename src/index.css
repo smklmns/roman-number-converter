@@ -1,13 +1,83 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("360_F_449254062_HG0Bs6M4WMcweNRF48lyksDpl7uoLI2b.jpg");
+}
+
+.App {
+  width: 900px;
+  height: 90%;
+  background-color: rgb(193, 193, 193);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+header {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-family:'Courier New', Courier, monospace;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.43);
+  border-radius: 10px;
+}
+
+
+input {
+  margin: 20px 0 20px 0;
+  border: none;
+  outline: none;
+  padding: 10px 0 10px 0;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.503);
+  color: rgba(0, 0, 0, 0.745);
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.result {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
